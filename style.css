@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  scroll-behavior: smooth;
+  /* colors  */
+  --light: #ffffff;
+  --blue: #0074fa;
+  --red: #fd3e26;
+
+  /* font  */
+  --font-poppins: "Poppins", sans-serif;
+
+  /* shadows  */
+  --shadow-sm: 0 3.5px 5px rgba(128, 128, 128, 0.204);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  box-shadow: var(--shadow-sm);
+}
+
+header > .navigation {
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  display: flex;
+}
+
+header > .navigation > .menu > ul > li {
+  display: inline-block;
+  padding: 15px 15px;
+  font-family: var(--font-poppins);
+  font-weight: 600;
+}
+
+.menu,
+.logo,
+.search-icon-login {
+  flex-grow: 1;
+}
+
+.search-icon-login {
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo > img {
+  width: 180px;
+}
+
+.navigation > .search-icon-login {
+  display: flex;
+  align-items: center;
+}
+
+.navigation > .search-icon-login > .search {
+  border: 1px solid rgba(0, 0, 0, 0.584);
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 0 12px;
+  display: block;
+  align-items: center;
+}
+
+.navigation > .search-icon-login > .search > i {
+  color: gray;
+}
+
+.navigation > .search-icon-login > .search > input {
+  border: none;
+  outline: none;
+  padding: 13px 0;
+}
+
+.navigation > .search-icon-login > .search > input::placeholder {
+  font-size: 18px;
+  font-family: var(--font-poppins);
+}
+
+.search-icon-login > .icon > i {
+  padding: 10px;
+  font-size: 20px;
+  color: black;
+}
+.login {
+  height: 90%;
+}
+.login > button {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  padding: 0 10px;
+}
+
+.search,
+.icon,
+.login {
+  flex-grow: 1;
+}
